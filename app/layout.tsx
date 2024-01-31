@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import opciones from "../public/images/boton-de-lista.png";
+import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,16 +18,43 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header className="h-20 w-full bg-red-200"></header>
-        
-        
-        <div>
-          {children}
+        <header className="sm:h-20 h-16 w-full flex flex-row relative bg-[#415041] text-white">
+          <div className="w-max h-full absolute z-10 left-0 ">
+            <div className="w-max h-full flex justify-center items-center">
+              <h1 className="sm:text-6xl text-3xl">USAGRO</h1>
+            </div>
           </div>
-        
-        
-      <footer className="h-20 w-full bg-green-200"></footer>
-        </body>
+          <div className="w-full h-full justify-center sm:flex hidden flex-row z-0">
+            <div className="w-52 h-full flex justify-center items-center">
+              Home
+            </div>
+            <div className="w-52 h-full flex justify-center items-center">
+              Catalogo
+            </div>
+            <div className="w-52 h-full flex justify-center items-center">
+              Contacto
+            </div>
+          </div>
+          <div className="w-full h-full justify-end flex sm:hidden">
+            <div className="w-24 p-8 h-full flex items-center">
+              <Image
+                alt="opciones"
+                src={opciones}
+                layout="responsive"
+                width={100}
+                height={100}
+                className=""
+              ></Image>
+            </div>
+          </div>
+        </header>
+
+        <div>{children}</div>
+
+        <footer className="h-20 w-full bg-[#415041] text-white">
+          Footer
+        </footer>
+      </body>
     </html>
   );
 }
