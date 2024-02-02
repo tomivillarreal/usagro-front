@@ -2,10 +2,10 @@ import Image from "next/image";
 import tractor from "../../../../public/images/tractor.png";
 
 export async function generateStaticParams() { 
-  return ({id: 1})
+  return [{ id: '1' }]
 }
  
-export default function ItemEspecifico({params}: {params:any}) {
+export default function ItemEspecifico({params}: { params: { id: string } }) {
   const { id } = params
   return (
     <main className="w-full h-full flex lg:flex-row flex-col lg:p-20 p-5 shadow-lg">
