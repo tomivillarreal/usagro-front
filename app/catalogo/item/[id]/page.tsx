@@ -1,6 +1,12 @@
 import Image from "next/image";
 import tractor from "../../../../public/images/tractor.png";
-export default function ItemEspecifico() {
+
+export async function generateStaticParams() { 
+  return ({id: 1})
+}
+ 
+export default function ItemEspecifico({params}: {params:any}) {
+  const { id } = params
   return (
     <main className="w-full h-full flex lg:flex-row flex-col lg:p-20 p-5 shadow-lg">
       {/* Galeria fotos */}
