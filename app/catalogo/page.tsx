@@ -26,7 +26,7 @@ export default function Catalogo() {
         <p>item</p>
         <p>item</p>
       </aside>
-        <div className="w-full lg:w-9/12 h-full flex flex-row gap-10 flex-wrap justify-center m-10">
+        <div className="w-full lg:w-9/12 h-full flex flex-col lg:flex-row gap-10 flex-wrap justify-center m-10">
         <motion.div
             whileHover={{ scale: 1.1 }}
 >
