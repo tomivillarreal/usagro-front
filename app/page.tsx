@@ -9,6 +9,8 @@ import tractor4 from "../public/images/tractor4.webp";
 import tractor5 from "../public/images/tractor5.png";
 import tractor6 from "../public/images/tractor6.jpg";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
+
 export default function Home() {
   const router = useRouter();
   return (
@@ -43,264 +45,312 @@ export default function Home() {
       </section>
       {/* PRIMER CATALOGO */}
       <section className="flex flex-col gap-10 h-full w-full">
-        <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
-          {/* Imagen */}
-          <div className="sm:w-max w-full h-max">
-            <Image
-              src={tractor1}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div>
-          {/* Caracteristicas */}
-          <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
-            <div>
-              <h1 className="text-7xl">Tractor Jonh Deere</h1>
-              <h2 className="text-3xl">$70.000 USD</h2>
-              <p>7200J</p>
-              <ul>
-                <li>Tractor de 200 hp</li>
-                <li>
-                  Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros de
-                  200 hp con inyección electrónica de alta presión Common Rail.
-                </li>
-                <li>
-                  Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
-                  retroceso.
-                </li>
-                <li>Chasis de acero fundido de diseño integral</li>
-                <li>
-                  Equipado de fábrica con JDLink™ y piloto automático Autotrac™
-                  .
-                </li>
-              </ul>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+            {/* Imagen */}
+            <div className="sm:w-max w-full h-max">
+              <Image
+                src={tractor1}
+                layout="responsive"
+                width={1000}
+                height={1000}
+                alt="portada"
+                className="object-cover"
+              ></Image>
             </div>
-            <button
-              className="bg-[#fcdc5c] h-max w-max p-4 "
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              Ver mas
-            </button>
-          </div>
-        </article>
-        <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
-          {/* Imagen */}
-          <div className="sm:w-[1000px] w-full h-max">
-            <Image
-              src={tractor2}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div>
-          {/* Caracteristicas */}
-          <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
-            <div>
-              <h1 className="text-7xl">Tractor Jonh Deere</h1>
-              <h2 className="text-3xl">$70.000 USD</h2>
-              <p>7200J</p>
-              <ul>
-                <li>Tractor de 200 hp</li>
-                <li>
-                  Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros de
-                  200 hp con inyección electrónica de alta presión Common Rail.
-                </li>
-                <li>
-                  Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
-                  retroceso.
-                </li>
-                <li>Chasis de acero fundido de diseño integral</li>
-                <li>
-                  Equipado de fábrica con JDLink™ y piloto automático Autotrac™
-                  .
-                </li>
-              </ul>
+            {/* Caracteristicas */}
+            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+              <div>
+                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h2 className="text-3xl">$70.000 USD</h2>
+                <p>7200J</p>
+                <ul>
+                  <li>Tractor de 200 hp</li>
+                  <li>
+                    Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros
+                    de 200 hp con inyección electrónica de alta presión Common
+                    Rail.
+                  </li>
+                  <li>
+                    Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
+                    retroceso.
+                  </li>
+                  <li>Chasis de acero fundido de diseño integral</li>
+                  <li>
+                    Equipado de fábrica con JDLink™ y piloto automático
+                    Autotrac™ .
+                  </li>
+                </ul>
+              </div>
+              <button
+                className="bg-[#fcdc5c] h-max w-max p-4 "
+                onClick={() => router.push("/catalogo/item/1")}
+              >
+                Ver mas
+              </button>
             </div>
-            <button
-              className="bg-[#fcdc5c] h-max w-max p-4 "
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              Ver mas
-            </button>
-          </div>
-        </article>
-        <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
-          {/* Imagen */}
-          <div className="sm:w-max w-full h-max">
-            <Image
-              src={tractor3}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div>
-          {/* Caracteristicas */}
-          <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
-            <div>
-              <h1 className="text-7xl">Tractor Jonh Deere</h1>
-              <h2 className="text-3xl">$70.000 USD</h2>
-              <p>7200J</p>
-              <ul>
-                <li>Tractor de 200 hp</li>
-                <li>
-                  Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros de
-                  200 hp con inyección electrónica de alta presión Common Rail.
-                </li>
-                <li>
-                  Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
-                  retroceso.
-                </li>
-                <li>Chasis de acero fundido de diseño integral</li>
-                <li>
-                  Equipado de fábrica con JDLink™ y piloto automático Autotrac™
-                  .
-                </li>
-              </ul>
+          </article>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+            {/* Imagen */}
+            <div className="sm:w-max w-full h-max">
+              <Image
+                src={tractor2}
+                layout="responsive"
+                width={1000}
+                height={1000}
+                alt="portada"
+                className="object-cover"
+              ></Image>
             </div>
-            <button
-              className="bg-[#fcdc5c] h-max w-max p-4 "
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              Ver mas
-            </button>
-          </div>
-        </article>
-        <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
-          {/* Imagen */}
-          <div className="sm:w-max w-full h-max">
-            <Image
-              src={tractor4}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div>
-          {/* Caracteristicas */}
-          <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
-            <div>
-              <h1 className="text-7xl">Tractor Jonh Deere</h1>
-              <h2 className="text-3xl">$70.000 USD</h2>
-              <p>7200J</p>
-              <ul>
-                <li>Tractor de 200 hp</li>
-                <li>
-                  Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros de
-                  200 hp con inyección electrónica de alta presión Common Rail.
-                </li>
-                <li>
-                  Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
-                  retroceso.
-                </li>
-                <li>Chasis de acero fundido de diseño integral</li>
-                <li>
-                  Equipado de fábrica con JDLink™ y piloto automático Autotrac™
-                  .
-                </li>
-              </ul>
+            {/* Caracteristicas */}
+            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+              <div>
+                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h2 className="text-3xl">$70.000 USD</h2>
+                <p>7200J</p>
+                <ul>
+                  <li>Tractor de 200 hp</li>
+                  <li>
+                    Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros
+                    de 200 hp con inyección electrónica de alta presión Common
+                    Rail.
+                  </li>
+                  <li>
+                    Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
+                    retroceso.
+                  </li>
+                  <li>Chasis de acero fundido de diseño integral</li>
+                  <li>
+                    Equipado de fábrica con JDLink™ y piloto automático
+                    Autotrac™ .
+                  </li>
+                </ul>
+              </div>
+              <button
+                className="bg-[#fcdc5c] h-max w-max p-4 "
+                onClick={() => router.push("/catalogo/item/1")}
+              >
+                Ver mas
+              </button>
             </div>
-            <button
-              className="bg-[#fcdc5c] h-max w-max p-4 "
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              Ver mas
-            </button>
-          </div>
-        </article>
-        <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
-          {/* Imagen */}
-          <div className="sm:w-max w-full h-max">
-            <Image
-              src={tractor5}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div>
-          {/* Caracteristicas */}
-          <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
-            <div>
-              <h1 className="text-7xl">Tractor Jonh Deere</h1>
-              <h2 className="text-3xl">$70.000 USD</h2>
-              <p>7200J</p>
-              <ul>
-                <li>Tractor de 200 hp</li>
-                <li>
-                  Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros de
-                  200 hp con inyección electrónica de alta presión Common Rail.
-                </li>
-                <li>
-                  Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
-                  retroceso.
-                </li>
-                <li>Chasis de acero fundido de diseño integral</li>
-                <li>
-                  Equipado de fábrica con JDLink™ y piloto automático Autotrac™
-                  .
-                </li>
-              </ul>
+          </article>
+        </motion.div>{" "}
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+            {/* Imagen */}
+            <div className="sm:w-max w-full h-max">
+              <Image
+                src={tractor3}
+                layout="responsive"
+                width={1000}
+                height={1000}
+                alt="portada"
+                className="object-cover"
+              ></Image>
             </div>
-            <button
-              className="bg-[#fcdc5c] h-max w-max p-4 "
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              Ver mas
-            </button>
-          </div>
-        </article>
-        <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
-          {/* Imagen */}
-          <div className="lg:w-max w-full h-max">
-            <Image
-              src={tractor6}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div>
-          {/* Caracteristicas */}
-          <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
-            <div>
-              <h1 className="text-7xl">Tractor Jonh Deere</h1>
-              <h2 className="text-3xl">$70.000 USD</h2>
-              <p>7200J</p>
-              <ul>
-                <li>Tractor de 200 hp</li>
-                <li>
-                  Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros de
-                  200 hp con inyección electrónica de alta presión Common Rail.
-                </li>
-                <li>
-                  Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
-                  retroceso.
-                </li>
-                <li>Chasis de acero fundido de diseño integral</li>
-                <li>
-                  Equipado de fábrica con JDLink™ y piloto automático Autotrac™
-                  .
-                </li>
-              </ul>
+            {/* Caracteristicas */}
+            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+              <div>
+                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h2 className="text-3xl">$70.000 USD</h2>
+                <p>7200J</p>
+                <ul>
+                  <li>Tractor de 200 hp</li>
+                  <li>
+                    Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros
+                    de 200 hp con inyección electrónica de alta presión Common
+                    Rail.
+                  </li>
+                  <li>
+                    Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
+                    retroceso.
+                  </li>
+                  <li>Chasis de acero fundido de diseño integral</li>
+                  <li>
+                    Equipado de fábrica con JDLink™ y piloto automático
+                    Autotrac™ .
+                  </li>
+                </ul>
+              </div>
+              <button
+                className="bg-[#fcdc5c] h-max w-max p-4 "
+                onClick={() => router.push("/catalogo/item/1")}
+              >
+                Ver mas
+              </button>
             </div>
-            <button
-              className="bg-[#fcdc5c] h-max w-max p-4 "
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              Ver mas
-            </button>
-          </div>
-        </article>
+          </article>
+        </motion.div>{" "}
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+            {/* Imagen */}
+            <div className="sm:w-max w-full h-max">
+              <Image
+                src={tractor4}
+                layout="responsive"
+                width={1000}
+                height={1000}
+                alt="portada"
+                className="object-cover"
+              ></Image>
+            </div>
+            {/* Caracteristicas */}
+            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+              <div>
+                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h2 className="text-3xl">$70.000 USD</h2>
+                <p>7200J</p>
+                <ul>
+                  <li>Tractor de 200 hp</li>
+                  <li>
+                    Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros
+                    de 200 hp con inyección electrónica de alta presión Common
+                    Rail.
+                  </li>
+                  <li>
+                    Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
+                    retroceso.
+                  </li>
+                  <li>Chasis de acero fundido de diseño integral</li>
+                  <li>
+                    Equipado de fábrica con JDLink™ y piloto automático
+                    Autotrac™ .
+                  </li>
+                </ul>
+              </div>
+              <button
+                className="bg-[#fcdc5c] h-max w-max p-4 "
+                onClick={() => router.push("/catalogo/item/1")}
+              >
+                Ver mas
+              </button>
+            </div>
+          </article>
+        </motion.div>{" "}
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+            {/* Imagen */}
+            <div className="sm:w-max w-full h-max">
+              <Image
+                src={tractor5}
+                layout="responsive"
+                width={1000}
+                height={1000}
+                alt="portada"
+                className="object-cover"
+              ></Image>
+            </div>
+            {/* Caracteristicas */}
+            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+              <div>
+                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h2 className="text-3xl">$70.000 USD</h2>
+                <p>7200J</p>
+                <ul>
+                  <li>Tractor de 200 hp</li>
+                  <li>
+                    Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros
+                    de 200 hp con inyección electrónica de alta presión Common
+                    Rail.
+                  </li>
+                  <li>
+                    Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
+                    retroceso.
+                  </li>
+                  <li>Chasis de acero fundido de diseño integral</li>
+                  <li>
+                    Equipado de fábrica con JDLink™ y piloto automático
+                    Autotrac™ .
+                  </li>
+                </ul>
+              </div>
+              <button
+                className="bg-[#fcdc5c] h-max w-max p-4 "
+                onClick={() => router.push("/catalogo/item/1")}
+              >
+                Ver mas
+              </button>
+            </div>
+          </article>
+        </motion.div>{" "}
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+            {/* Imagen */}
+            <div className="sm:w-max w-full h-max">
+              <Image
+                src={tractor6}
+                layout="responsive"
+                width={1000}
+                height={1000}
+                alt="portada"
+                className="object-cover"
+              ></Image>
+            </div>
+            {/* Caracteristicas */}
+            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+              <div>
+                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h2 className="text-3xl">$70.000 USD</h2>
+                <p>7200J</p>
+                <ul>
+                  <li>Tractor de 200 hp</li>
+                  <li>
+                    Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros
+                    de 200 hp con inyección electrónica de alta presión Common
+                    Rail.
+                  </li>
+                  <li>
+                    Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de
+                    retroceso.
+                  </li>
+                  <li>Chasis de acero fundido de diseño integral</li>
+                  <li>
+                    Equipado de fábrica con JDLink™ y piloto automático
+                    Autotrac™ .
+                  </li>
+                </ul>
+              </div>
+              <button
+                className="bg-[#fcdc5c] h-max w-max p-4 "
+                onClick={() => router.push("/catalogo/item/1")}
+              >
+                Ver mas
+              </button>
+            </div>
+          </article>
+        </motion.div>
       </section>
     </main>
   );
