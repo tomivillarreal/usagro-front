@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main className="w-full h-full">
       {/* Call to action */}
-      <section className="w-full h-full relative  ">
-        <div className="relative w-screen h-screen z-0 object-cover">
+      <section className="w-full h-full relative">
+        <div className="relative w-full h-screen z-0 object-cover">
           <Image
             src={portada}
             fill
