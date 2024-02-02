@@ -33,7 +33,7 @@ export default function RootLayout({
             <div className="w-52 h-full flex justify-center items-center hover:cursor-pointer" onClick={()=>router.push("/")}>
               Home
             </div>
-            <div className="w-52 h-full flex justify-center items-center hover:cursor-pointer" onClick={()=>router.push("/inventario")} >
+            <div className="w-52 h-full flex justify-center items-center hover:cursor-pointer" onClick={()=>router.push("/catalogo")} >
               Catalogo
             </div>
             <div className="w-52 h-full flex justify-center items-center hover:cursor-pointer" onClick={()=>router.push("/contacto")} >
