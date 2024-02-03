@@ -10,6 +10,7 @@ import tractor5 from "../public/images/tractor5.png";
 import tractor6 from "../public/images/tractor6.jpg";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import SliderInfinity from "./components/sliderInfinity/component";
 
 export default function Home() {
   const router = useRouter();
@@ -43,8 +44,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <SliderInfinity></SliderInfinity>
       {/* PRIMER CATALOGO */}
-      <section className="flex flex-col gap-10 h-full w-full">
+      <section className="flex flex-col gap-20 h-full w-full">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -53,15 +55,17 @@ export default function Home() {
         >
           <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="sm:w-max w-full h-max">
-              <Image
-                src={tractor1}
-                layout="responsive"
-                width={1000}
-                height={1000}
-                alt="portada"
-                className="object-cover"
-              ></Image>
+            <div className="w-2/3 h-max">
+              <div className="h-max w-full relative">
+                <Image
+                  src={tractor1}
+                  layout="responsive"
+                  width={1000}
+                  height={1000}
+                  alt="portada"
+                  className="object-cover"
+                ></Image>
+              </div>
             </div>
             {/* Caracteristicas */}
             <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
@@ -102,17 +106,19 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="sm:w-max w-full h-max">
-              <Image
-                src={tractor2}
-                layout="responsive"
-                width={1000}
-                height={1000}
-                alt="portada"
-                className="object-cover"
-              ></Image>
+            <div className="w-2/3 h-max">
+              <div className="h-max w-full relative">
+                <Image
+                  src={tractor2}
+                  layout="responsive"
+                  width={1000}
+                  height={1000}
+                  alt="portada"
+                  className="object-cover"
+                ></Image>
+              </div>
             </div>
             {/* Caracteristicas */}
             <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
@@ -146,7 +152,7 @@ export default function Home() {
               </button>
             </div>
           </article>
-        </motion.div>{" "}
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -155,15 +161,17 @@ export default function Home() {
         >
           <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="sm:w-max w-full h-max">
-              <Image
-                src={tractor3}
-                layout="responsive"
-                width={1000}
-                height={1000}
-                alt="portada"
-                className="object-cover"
-              ></Image>
+            <div className="w-2/3 h-max">
+              <div className="h-max w-full relative">
+                <Image
+                  src={tractor4}
+                  layout="responsive"
+                  width={1000}
+                  height={1000}
+                  alt="portada"
+                  className="object-cover"
+                ></Image>
+              </div>
             </div>
             {/* Caracteristicas */}
             <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
@@ -197,24 +205,26 @@ export default function Home() {
               </button>
             </div>
           </article>
-        </motion.div>{" "}
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="sm:w-max w-full h-max">
-              <Image
-                src={tractor4}
-                layout="responsive"
-                width={1000}
-                height={1000}
-                alt="portada"
-                className="object-cover"
-              ></Image>
+            <div className="w-2/3 h-max">
+              <div className="h-max w-full relative">
+                <Image
+                  src={tractor3}
+                  layout="responsive"
+                  width={1000}
+                  height={1000}
+                  alt="portada"
+                  className="object-cover"
+                ></Image>
+              </div>
             </div>
             {/* Caracteristicas */}
             <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
@@ -248,7 +258,7 @@ export default function Home() {
               </button>
             </div>
           </article>
-        </motion.div>{" "}
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -257,15 +267,17 @@ export default function Home() {
         >
           <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="sm:w-max w-full h-max">
-              <Image
-                src={tractor5}
-                layout="responsive"
-                width={1000}
-                height={1000}
-                alt="portada"
-                className="object-cover"
-              ></Image>
+            <div className="w-2/3 h-max">
+              <div className="h-max w-full relative">
+                <Image
+                  src={tractor5}
+                  layout="responsive"
+                  width={1000}
+                  height={1000}
+                  alt="portada"
+                  className="object-cover"
+                ></Image>
+              </div>
             </div>
             {/* Caracteristicas */}
             <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
@@ -299,24 +311,26 @@ export default function Home() {
               </button>
             </div>
           </article>
-        </motion.div>{" "}
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="sm:w-max w-full h-max">
-              <Image
-                src={tractor6}
-                layout="responsive"
-                width={1000}
-                height={1000}
-                alt="portada"
-                className="object-cover"
-              ></Image>
+            <div className="w-2/3 h-max">
+              <div className="h-max w-full relative">
+                <Image
+                  src={tractor6}
+                  layout="responsive"
+                  width={1000}
+                  height={1000}
+                  alt="portada"
+                  className="object-cover"
+                ></Image>
+              </div>
             </div>
             {/* Caracteristicas */}
             <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
