@@ -76,7 +76,7 @@ export default function Home() {
             {/* Caracteristicas */}
             <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
-                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h1 className="text-5xl lg:text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
                 <p>7200J</p>
                 <ul>
@@ -135,7 +135,7 @@ export default function Home() {
             {/* Caracteristicas */}
             <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
-                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h1 className="text-5xl lg:text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
                 <p>7200J</p>
                 <ul>
@@ -194,7 +194,7 @@ export default function Home() {
             {/* Caracteristicas */}
             <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
-                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h1 className="text-5xl lg:text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
                 <p>7200J</p>
                 <ul>
@@ -253,7 +253,7 @@ export default function Home() {
             {/* Caracteristicas */}
             <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
-                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h1 className="text-5xl lg:text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
                 <p>7200J</p>
                 <ul>
@@ -312,7 +312,7 @@ export default function Home() {
             {/* Caracteristicas */}
             <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
-                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h1 className="text-5xl lg:text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
                 <p>7200J</p>
                 <ul>
@@ -371,7 +371,7 @@ export default function Home() {
             {/* Caracteristicas */}
             <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
-                <h1 className="text-7xl">Tractor Jonh Deere</h1>
+                <h1 className="text-5xl lg:text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
                 <p>7200J</p>
                 <ul>

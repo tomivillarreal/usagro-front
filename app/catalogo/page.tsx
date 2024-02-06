@@ -34,7 +34,7 @@ export default function Catalogo() {
             </PopoverContent>
           </Popover>
         </aside>
-        <div className="w-full lg:w-9/12 h-full flex flex-col lg:flex-row gap-10 flex-wrap justify-center m-10">
+        <div className="w-full lg:w-9/12 h-full flex flex-col lg:flex-row gap-10 flex-wrap justify-center">
           <motion.div whileHover={{ scale: 1.1 }}>
             <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
               <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
@@ -68,8 +68,7 @@ export default function Catalogo() {
               </div>
               <div className="w-full h-fit text-xl text-center">Item 1</div>
             </article>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
+          </motion.div>          <motion.div whileHover={{ scale: 1.1 }}>
             <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
               <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
                 <div className="w-full h-full">
@@ -85,8 +84,7 @@ export default function Catalogo() {
               </div>
               <div className="w-full h-fit text-xl text-center">Item 1</div>
             </article>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
+          </motion.div>          <motion.div whileHover={{ scale: 1.1 }}>
             <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
               <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
                 <div className="w-full h-full">
@@ -102,8 +100,7 @@ export default function Catalogo() {
               </div>
               <div className="w-full h-fit text-xl text-center">Item 1</div>
             </article>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
+          </motion.div>          <motion.div whileHover={{ scale: 1.1 }}>
             <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
               <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
                 <div className="w-full h-full">
@@ -119,8 +116,7 @@ export default function Catalogo() {
               </div>
               <div className="w-full h-fit text-xl text-center">Item 1</div>
             </article>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
+          </motion.div>          <motion.div whileHover={{ scale: 1.1 }}>
             <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
               <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
                 <div className="w-full h-full">
@@ -136,8 +132,7 @@ export default function Catalogo() {
               </div>
               <div className="w-full h-fit text-xl text-center">Item 1</div>
             </article>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
+          </motion.div>          <motion.div whileHover={{ scale: 1.1 }}>
             <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
               <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
                 <div className="w-full h-full">
