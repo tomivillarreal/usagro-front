@@ -11,6 +11,7 @@ import tractor6 from "../public/images/tractor6.jpg";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import SliderInfinity from "./components/sliderInfinity/component";
+import { Button } from "@nextui-org/react";
 
 export default function Home() {
   const router = useRouter();
@@ -34,12 +35,13 @@ export default function Home() {
                 ¡Optimiza con nuestras máquinas agrícolas usadas! ¡Haz crecer tu
                 negocio ya!{" "}
               </p>
-              <button
-                className="bg-[#6c6422] h-max w-max p-4 text-white"
+              <Button
+                className="h-max w-max p-4 text-white"
                 onClick={() => router.push("/catalogo")}
+                color="secondary"
               >
                 Ver Catalogo
-              </button>
+              </Button>
             </div>
           </div>
         </div>
@@ -91,12 +93,13 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <button
-                className="bg-[#fcdc5c] h-max w-max p-4 "
+              <Button
+                className="h-max w-max p-4 "
+                color="success"
                 onClick={() => router.push("/catalogo/item/1")}
               >
                 Ver mas
-              </button>
+              </Button>
             </div>
           </article>
         </motion.div>
@@ -144,12 +147,13 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <button
-                className="bg-[#fcdc5c] h-max w-max p-4 "
+              <Button
+                className="h-max w-max p-4 "
+                color="success"
                 onClick={() => router.push("/catalogo/item/1")}
               >
                 Ver mas
-              </button>
+              </Button>
             </div>
           </article>
         </motion.div>
@@ -197,12 +201,13 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <button
-                className="bg-[#fcdc5c] h-max w-max p-4 "
+              <Button
+                className="h-max w-max p-4 "
+                color="success"
                 onClick={() => router.push("/catalogo/item/1")}
               >
                 Ver mas
-              </button>
+              </Button>
             </div>
           </article>
         </motion.div>
@@ -250,12 +255,13 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <button
-                className="bg-[#fcdc5c] h-max w-max p-4 "
+              <Button
+                className="h-max w-max p-4 "
+                color="success"
                 onClick={() => router.push("/catalogo/item/1")}
               >
                 Ver mas
-              </button>
+              </Button>
             </div>
           </article>
         </motion.div>
@@ -303,12 +309,13 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <button
-                className="bg-[#fcdc5c] h-max w-max p-4 "
+              <Button
+                className="h-max w-max p-4 "
+                color="success"
                 onClick={() => router.push("/catalogo/item/1")}
               >
                 Ver mas
-              </button>
+              </Button>
             </div>
           </article>
         </motion.div>
@@ -356,12 +363,13 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <button
-                className="bg-[#fcdc5c] h-max w-max p-4 "
+              <Button
+                className="h-max w-max p-4 "
+                color="success"
                 onClick={() => router.push("/catalogo/item/1")}
               >
                 Ver mas
-              </button>
+              </Button>
             </div>
           </article>
         </motion.div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import tractor from "../../../../public/images/tractor.png";
+import { Button } from "@nextui-org/react";
 
 export async function generateStaticParams() { 
   return [{ id: '1' }]
@@ -102,7 +103,7 @@ export default function ItemEspecifico({params}: { params: { id: string } }) {
           niveles.
         </p>
         <div className="w-full flex justify-center">
-          <button className="bg-[#fcdc5c] h-max w-max p-4">Contactar</button>
+          <Button className="h-max w-max p-4" color="success">Contactar</Button>
         </div>
       </section>
     </main>
