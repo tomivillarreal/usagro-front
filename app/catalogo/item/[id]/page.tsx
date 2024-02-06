@@ -2,27 +2,29 @@ import Image from "next/image";
 import tractor from "../../../../public/images/tractor.png";
 import { Button } from "@nextui-org/react";
 
-export async function generateStaticParams() { 
-  return [{ id: '1' }]
+export async function generateStaticParams() {
+  return [{ id: "1" }];
 }
- 
-export default function ItemEspecifico({params}: { params: { id: string } }) {
-  const { id } = params
+
+export default function ItemEspecifico({ params }: { params: { id: string } }) {
+  const { id } = params;
   return (
-    <main className="w-full h-full flex lg:flex-row flex-col lg:p-20 p-5 shadow-lg">
+    <main className="w-full h-full flex lg:flex-row flex-col lg:p-20 p-5 gap-5 shadow-lg">
       {/* Galeria fotos */}
-      <section className="lg:h-screen lg:w-1/3 flex justify-start items-center flex-col gap-5">
-        <div className="lg:w-[500px] lg:h-[500px] w-full h-full shadow-md relative aspect-square">
-          <Image
-            src={tractor}
-            layout="responsive"
-            width={1000}
-            height={1000}
-            alt="portada"
-            className="object-cover"
-          ></Image>
+      <section className="lg:h-full lg:w-1/3 flex justify-start items-center flex-col gap-5 ">
+        <div className="lg:max-w lg:max-h-[500px] h-full shadow-md relative aspect-square">
+          <div className="h-fit w-fit">
+            <Image
+              src={tractor}
+              layout="responsive"
+              width={1000}
+              height={1000}
+              alt="portada"
+              className="object-contain"
+            ></Image>
+          </div>
         </div>
-        <div className="lg:w-[500px] lg:h-52 flex flex-row flex-wrap gap-5 justify-center w-full h-full">
+        <div className="lg:max-w lg:h-full flex flex-row flex-wrap gap-5 justify-center h-full ">
           <div className="h-36 w-36 shadow-md aspect-square">
             {" "}
             <Image
@@ -31,7 +33,7 @@ export default function ItemEspecifico({params}: { params: { id: string } }) {
               width={1000}
               height={1000}
               alt="portada"
-                  className="object-cover"
+              className="object-cover"
             ></Image>
           </div>
           <div className="h-36 w-36 shadow-md aspect-square">
@@ -42,7 +44,7 @@ export default function ItemEspecifico({params}: { params: { id: string } }) {
               width={1000}
               height={1000}
               alt="portada"
-                  className="object-cover"
+              className="object-cover"
             ></Image>
           </div>
           <div className="h-36 w-36 shadow-md aspect-square">
@@ -53,13 +55,13 @@ export default function ItemEspecifico({params}: { params: { id: string } }) {
               width={1000}
               height={1000}
               alt="portada"
-                  className="object-cover"
+              className="object-cover"
             ></Image>
           </div>
         </div>
       </section>
       {/* informacion unidad */}
-      <section className="lg:h-screen lg:w-2/3 flex flex-col gap-4">
+      <section className="lg:h-full lg:w-2/3 flex flex-col gap-4">
         <h1 className="lg:text-8xl text-6xl text-center">Tractor Jonh Deere</h1>
         <div className="flex flex-row justify-evenly">
           <h3 className="text-4xl ">$70.000</h3>
@@ -103,7 +105,9 @@ export default function ItemEspecifico({params}: { params: { id: string } }) {
           niveles.
         </p>
         <div className="w-full flex justify-center">
-          <Button className="h-max w-max p-4" color="success">Contactar</Button>
+          <Button className="h-max w-max p-4" color="success">
+            Contactar
+          </Button>
         </div>
       </section>
     </main>

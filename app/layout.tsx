@@ -39,10 +39,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <header className="sm:h-20 h-16 w-full flex-row relative bg-[#415041] text-white hidden lg:flex">
+          <header className="sm:h-16 h-16 w-full flex-row relative bg-[#415041] text-white hidden lg:flex">
             <div className="w-max h-full absolute z-10 left-0 ">
               <div className="w-max h-full flex justify-center items-center">
-                <h1 className="sm:text-6xl text-3xl">USAGRO</h1>
+                <h1 className="sm:text-5xl text-3xl">USAGRO</h1>
               </div>
             </div>
             <div className="w-full h-full justify-center sm:flex hidden flex-row z-0">

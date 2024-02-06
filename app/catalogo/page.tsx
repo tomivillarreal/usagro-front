@@ -86,6 +86,74 @@ export default function Catalogo() {
               <div className="w-full h-fit text-xl text-center">Item 1</div>
             </article>
           </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
+              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
+                <div className="w-full h-full">
+                  <Image
+                    src={tractor1}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </div>
+              </div>
+              <div className="w-full h-fit text-xl text-center">Item 1</div>
+            </article>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
+              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
+                <div className="w-full h-full">
+                  <Image
+                    src={tractor1}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </div>
+              </div>
+              <div className="w-full h-fit text-xl text-center">Item 1</div>
+            </article>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
+              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
+                <div className="w-full h-full">
+                  <Image
+                    src={tractor1}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </div>
+              </div>
+              <div className="w-full h-fit text-xl text-center">Item 1</div>
+            </article>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <article className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col">
+              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
+                <div className="w-full h-full">
+                  <Image
+                    src={tractor1}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </div>
+              </div>
+              <div className="w-full h-fit text-xl text-center">Item 1</div>
+            </article>
+          </motion.div>
         </div>
       </section>
     </main>

@@ -12,7 +12,6 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import SliderInfinity from "./components/sliderInfinity/component";
 import { Button } from "@nextui-org/react";
-
 export default function Home() {
   const router = useRouter();
   return (
@@ -21,11 +20,11 @@ export default function Home() {
       <section className="w-full h-full relative">
         <div className="relative w-full h-screen z-0 object-cover">
           <Image
-            src={portada}
-            fill
-            alt="portada"
-            className="object-cover"
-          ></Image>
+              src={portada}
+              fill
+              alt="portada"
+              className="object-cover"
+            ></Image>
         </div>
         <div className="absolute top-0 w-full h-full z-10">
           <div className="flex h-full w-full justify-center items-center">
@@ -50,27 +49,32 @@ export default function Home() {
       {/* PRIMER CATALOGO */}
       <section className="flex flex-col gap-20 h-full w-full">
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row lg:max-h-full flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="w-2/3 h-max">
-              <div className="h-max w-full relative">
-                <Image
-                  src={tractor1}
-                  layout="responsive"
-                  width={1000}
-                  height={1000}
-                  alt="portada"
-                  className="object-cover"
-                ></Image>
+            <div className="lg:w-2/3 h-max w-full">
+              <div className="h-full w-full relative">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Image
+                    src={tractor1}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </motion.div>
               </div>
             </div>
             {/* Caracteristicas */}
-            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+            <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
                 <h1 className="text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
@@ -104,27 +108,32 @@ export default function Home() {
           </article>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row-reverse lg:max-h-full flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="w-2/3 h-max">
-              <div className="h-max w-full relative">
-                <Image
-                  src={tractor2}
-                  layout="responsive"
-                  width={1000}
-                  height={1000}
-                  alt="portada"
-                  className="object-cover"
-                ></Image>
+            <div className="lg:w-2/3 h-max w-full">
+              <div className="h-full w-full relative">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Image
+                    src={tractor2}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </motion.div>
               </div>
             </div>
             {/* Caracteristicas */}
-            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+            <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
                 <h1 className="text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
@@ -158,27 +167,32 @@ export default function Home() {
           </article>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row lg:max-h-full flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="w-2/3 h-max">
-              <div className="h-max w-full relative">
-                <Image
-                  src={tractor4}
-                  layout="responsive"
-                  width={1000}
-                  height={1000}
-                  alt="portada"
-                  className="object-cover"
-                ></Image>
+            <div className="lg:w-2/3 h-max w-full">
+              <div className="h-full w-full relative">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Image
+                    src={tractor4}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </motion.div>
               </div>
             </div>
             {/* Caracteristicas */}
-            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+            <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
                 <h1 className="text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
@@ -212,27 +226,32 @@ export default function Home() {
           </article>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row-reverse lg:max-h-full flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="w-2/3 h-max">
-              <div className="h-max w-full relative">
-                <Image
-                  src={tractor3}
-                  layout="responsive"
-                  width={1000}
-                  height={1000}
-                  alt="portada"
-                  className="object-cover"
-                ></Image>
+            <div className="lg:w-2/3 h-max w-full">
+              <div className="h-full w-full relative">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Image
+                    src={tractor3}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </motion.div>
               </div>
             </div>
             {/* Caracteristicas */}
-            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+            <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
                 <h1 className="text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
@@ -266,27 +285,32 @@ export default function Home() {
           </article>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row lg:max-h-full flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="w-2/3 h-max">
-              <div className="h-max w-full relative">
-                <Image
-                  src={tractor5}
-                  layout="responsive"
-                  width={1000}
-                  height={1000}
-                  alt="portada"
-                  className="object-cover"
-                ></Image>
+            <div className="lg:w-2/3 h-max w-full">
+              <div className="h-full w-full relative">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Image
+                    src={tractor5}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </motion.div>
               </div>
             </div>
             {/* Caracteristicas */}
-            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+            <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
                 <h1 className="text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
@@ -320,27 +344,32 @@ export default function Home() {
           </article>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <article className="flex lg:flex-row-reverse lg:h-[600px] flex-col shadow-xl h-full w-full">
+          <article className="flex lg:flex-row-reverse lg:max-h-full flex-col shadow-xl h-full w-full">
             {/* Imagen */}
-            <div className="w-2/3 h-max">
-              <div className="h-max w-full relative">
-                <Image
-                  src={tractor6}
-                  layout="responsive"
-                  width={1000}
-                  height={1000}
-                  alt="portada"
-                  className="object-cover"
-                ></Image>
+            <div className="lg:w-2/3 h-max w-full">
+              <div className="h-full w-full relative">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Image
+                    src={tractor6}
+                    layout="responsive"
+                    width={1000}
+                    height={1000}
+                    alt="portada"
+                    className="object-cover"
+                  ></Image>
+                </motion.div>
               </div>
             </div>
             {/* Caracteristicas */}
-            <div className="w-full h-full p-10 bg-gray-100 flex flex-col justify-around gap-10 items-center">
+            <div className="w-full h-full p-10  flex flex-col justify-around gap-10 items-center">
               <div>
                 <h1 className="text-7xl">Tractor Jonh Deere</h1>
                 <h2 className="text-3xl">$70.000 USD</h2>
