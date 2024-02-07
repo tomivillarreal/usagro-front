@@ -1,6 +1,7 @@
 import Image from "next/image";
 import tractor from "../../../../public/images/tractor.png";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   return [{ id: "1" }];
@@ -106,10 +107,17 @@ export default function ItemEspecifico({ params }: { params: { id: string } }) {
         </p>
         <div className="w-full flex justify-center">
           <Button className="h-max w-max p-4" color="success">
-            Contactar
+            <Link href={"https://w.app/usagro"}>Wpp</Link>
+          </Button>
+          <Button className="h-max w-max p-4" color="secondary">
+            <Link href={"tel:3536573126"}>
+            Telefono
+            </Link>
           </Button>
         </div>
       </section>
     </main>
+    
   );
 }
+

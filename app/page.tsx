@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import SliderInfinity from "./components/sliderInfinity/component";
 import { Button } from "@nextui-org/react";
+import Categoria from "./catalogo/components/categoria";
 export default function Home() {
   const router = useRouter();
   return (
@@ -47,7 +48,10 @@ export default function Home() {
       </section>
       <SliderInfinity></SliderInfinity>
       {/* PRIMER CATALOGO */}
-      <section className="flex flex-col gap-20 h-full w-full">
+
+    <Categoria></Categoria>
+
+      <section className="flex flex-col gap-20 h-full w-full hidden">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
