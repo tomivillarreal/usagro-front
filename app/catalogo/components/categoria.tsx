@@ -6,8 +6,9 @@ import { motion } from "framer-motion";
 import { Card, CardBody, CardFooter } from "@nextui-org/react";
 export default function Categoria() {
   return (
-      <div className="w-full h-full flex flex-row gap-5 flex-wrap">
-        <div className="w-40 h-40  shadow-lg">
+    <div className="w-full h-full flex flex-row gap-5 flex-wrap">
+      <Card className="w-40 h-40">
+        <CardBody className="h-full w-full overflow-hidden">
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
@@ -21,28 +22,13 @@ export default function Categoria() {
               className="object-cover"
             ></Image>
           </motion.div>
+        </CardBody>
+        <CardFooter>
           <h1 className="w-full text-center">Tractores</h1>
-        </div>
-        <Card  className="w-40 h-40">
-          <CardBody className="h-full w-full overflow-hidden">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Image
-              src={tractor}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </motion.div>
-          </CardBody>
-          <CardFooter>          <h1 className="w-full text-center">Tractores</h1>
-</CardFooter>
-        </Card>
-        <div className="w-40 h-40  shadow-lg">
+        </CardFooter>
+      </Card>
+      <Card className="w-40 h-40">
+        <CardBody className="h-full w-full overflow-hidden">
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
@@ -56,9 +42,13 @@ export default function Categoria() {
               className="object-cover"
             ></Image>
           </motion.div>
-          <h1 className="w-full text-center">Cosechadora</h1>
-        </div>
-        <div className="w-40 h-40  shadow-lg">
+        </CardBody>
+        <CardFooter>
+          <h1 className="w-full text-center">Cosechadaora</h1>
+        </CardFooter>
+      </Card>
+      <Card className="w-40 h-40">
+        <CardBody className="h-full w-full overflow-hidden">
           <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
@@ -72,8 +62,31 @@ export default function Categoria() {
               className="object-cover"
             ></Image>
           </motion.div>
+        </CardBody>
+        <CardFooter>
           <h1 className="w-full text-center">Fertilizadora</h1>
-        </div>
-      </div>
+        </CardFooter>
+      </Card>
+      <Card className="w-40 h-40">
+        <CardBody className="h-full w-full overflow-hidden">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Image
+              src={tractor}
+              layout="responsive"
+              width={1000}
+              height={1000}
+              alt="portada"
+              className="object-cover"
+            ></Image>
+          </motion.div>
+        </CardBody>
+        <CardFooter>
+          <h1 className="w-full text-center">Tractores</h1>
+        </CardFooter>
+      </Card>
+    </div>
   );
 }

@@ -13,7 +13,7 @@ export default function FilterContent() {
   const [selectedKeys, setSelectedKeys] = useState<String>("Menor Precio");
 
   return (
-    <div>
+    <div className="w-full">
       <div className="flex items-center gap-3">
         <p>Ordenar por</p>
         <Dropdown>

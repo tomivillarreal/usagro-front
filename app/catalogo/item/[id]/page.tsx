@@ -1,5 +1,7 @@
 import Image from "next/image";
 import tractor from "../../../../public/images/tractor.png";
+import phone from "../../../../public/phone.png";
+import whatsapp from "../../../../public/whatsapp.webp";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 
@@ -106,18 +108,28 @@ export default function ItemEspecifico({ params }: { params: { id: string } }) {
           niveles.
         </p>
         <div className="w-full flex justify-center">
-          <Button className="h-max w-max p-4" color="success">
-            <Link href={"https://w.app/usagro"}>Wpp</Link>
-          </Button>
-          <Button className="h-max w-max p-4" color="secondary">
-            <Link href={"tel:3536573126"}>
-            Telefono
+          <Button
+            className="h-10 w-10"
+            color="default"
+            isIconOnly
+          >
+            <Link             href={"https://w.app/usagro"}
+>
+            <Image src={whatsapp} fill alt="phone"></Image>
             </Link>
           </Button>
+          <Button
+            className="h-10 w-10 p-4"
+            color="default"
+            isIconOnly
+
+          >
+            <Link             href={"tel:3536573126"}>
+            <Image src={phone} fill alt="phone"></Image>
+            </Link>
+          </Button>{" "}
         </div>
       </section>
     </main>
-    
   );
 }
-
