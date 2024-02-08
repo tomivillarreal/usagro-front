@@ -15,7 +15,7 @@ export default function CarruselItem({ images }: { images: any }) {
     <Slider {...settings}>
       {images.map((image: any, index: any) => {
         return (
-          <div  key={index} className="h-36 w-36 shadow-md aspect-square ">
+          <div  key={index} className="h-36 w-36 shadow-md ">
             <Image
               src={image}
               layout="responsive"

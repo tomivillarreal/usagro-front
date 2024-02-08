@@ -1,0 +1,13 @@
+
+
+{
+    "nombre": "Tractor Jonh Deere",
+    "precio": "72.000",
+    "localidad": "Villa María",
+    "modelo": "7200J",
+    "caracteristicas": [" Tractor de 200 hp", 
+    "Motor agrícola John Deere PowerTech™ de 6,8L y 6 cilindros de 200 hp con inyección electrónica de alta presión Common Rail.",
+    "Transmisión AutoQuad™ Plus con 16 marchas de avance y 16 de retroceso.",  "Chasis de acero fundido de diseño integral","Equipado de fábrica con JDLink™ y piloto automático Autotrac™ ."],
+    "descripcion": "El tractor, impulsado por una potencia imponente de 200 caballos de fuerza, se destaca por su eficiencia y rendimiento excepcionales. Equipado con un motor agrícola John Deere PowerTech™ de 6,8 litros y 6 cilindros, el corazón de esta máquina funciona con inyección electrónica de alta presión Common Rail, garantizando una respuesta instantánea y una potencia inigualable. La transmisión AutoQuad™ Plus, con sus 16 marchas de avance y 16 de retroceso, proporciona una versatilidad incomparable para adaptarse a una variedad de tareas agrícolas. Su diseño integral de chasis de acero fundido asegura una resistencia robusta y duradera, proporcionando una base sólida para enfrentar los desafíos del campo con facilidad. Este tractor va más allá de la maquinaria convencional al venir equipado de fábrica con tecnologías avanzadas como JDLink™ y el piloto automático Autotrac™, que no solo simplifican las operaciones, sino también mejoran la precisión y la eficiencia en el trabajo diario. Con 7200J de energía, este tractor representa una combinación perfecta de potencia, tecnología y durabilidad, elevando la productividad agrícola a nuevos niveles."
+
+}
