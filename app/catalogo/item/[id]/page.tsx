@@ -1,13 +1,16 @@
+"use client"
+
 import Image from "next/image";
 import tractor from "../../../../public/images/tractor.png";
+import tractor2 from "../../../../public/images/tractor2.webp";
+// import tractor3 from "../../../../public/images/tractor3.png";
+// import tractor4 from "../../../../public/images/tractor4.webp";
+// import tractor5 from "../../../../public/images/tractor5.png";
 import phone from "../../../../public/phone.png";
 import whatsapp from "../../../../public/whatsapp.webp";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
-
-export async function generateStaticParams() {
-  return [{ id: "1" }];
-}
+import CarruselItem from "../../components/carruselItem";
 
 export default function ItemEspecifico({ params }: { params: { id: string } }) {
   const { id } = params;
@@ -27,8 +30,9 @@ export default function ItemEspecifico({ params }: { params: { id: string } }) {
             ></Image>
           </div>
         </div>
-        <div className="lg:max-w lg:h-full flex flex-row flex-wrap gap-5 justify-center h-full ">
-          <div className="h-36 w-36 shadow-md aspect-square">
+        <div className="lg:w-full lg:h-36 lg:px-10 w-full h-max">
+            <CarruselItem images={[tractor, tractor2, tractor,tractor,tractor,tractor,tractor,tractor]}></CarruselItem>
+          {/* <div className="h-36 w-36 shadow-md aspect-square">
             {" "}
             <Image
               src={tractor}
@@ -60,7 +64,7 @@ export default function ItemEspecifico({ params }: { params: { id: string } }) {
               alt="portada"
               className="object-cover"
             ></Image>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* informacion unidad */}
@@ -108,24 +112,14 @@ export default function ItemEspecifico({ params }: { params: { id: string } }) {
           niveles.
         </p>
         <div className="w-full flex justify-center">
-          <Button
-            className="h-10 w-10"
-            color="default"
-            isIconOnly
-          >
-            <Link             href={"https://w.app/usagro"}
->
-            <Image src={whatsapp} fill alt="phone"></Image>
+          <Button className="h-10 w-10 bg-white"  isIconOnly>
+            <Link href={"https://w.app/usagro"}>
+              <Image src={whatsapp} fill alt="phone"></Image>
             </Link>
           </Button>
-          <Button
-            className="h-10 w-10 p-4"
-            color="default"
-            isIconOnly
-
-          >
-            <Link             href={"tel:3536573126"}>
-            <Image src={phone} fill alt="phone"></Image>
+          <Button className="h-10 w-10 p-4 bg-white" isIconOnly>
+            <Link href={"tel:3536573126"}>
+              <Image src={phone} fill alt="phone"></Image>
             </Link>
           </Button>{" "}
         </div>
