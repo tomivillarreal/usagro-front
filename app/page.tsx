@@ -48,7 +48,7 @@ export default function Home() {
       </section>
       <SliderInfinity></SliderInfinity>
       {/* PRIMER CATALOGO */}
-    <div className="p-10 flex flex-row items-center justify-center w-full h-full bg-red-50">
+    <div className="p-10 flex flex-row items-center justify-center w-full h-full ">
 
     <Categoria></Categoria>
     </div>

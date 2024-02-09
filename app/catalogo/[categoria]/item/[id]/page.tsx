@@ -1,16 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import tractor from "../../../../public/images/tractor.png";
-import tractor2 from "../../../../public/images/tractor2.webp";
-// import tractor3 from "../../../../public/images/tractor3.png";
-// import tractor4 from "../../../../public/images/tractor4.webp";
-// import tractor5 from "../../../../public/images/tractor5.png";
-import phone from "../../../../public/phone.png";
-import whatsapp from "../../../../public/whatsapp.webp";
+import tractor from "../../../../../public/images/tractor.png";
+import tractor2 from "../../../../../public/images/tractor2.webp";
+import phone from "../../../../../public/phone.png";
+import whatsapp from "../../../../../public/whatsapp.webp";
 import { BreadcrumbItem, Breadcrumbs, Button } from "@nextui-org/react";
 import Link from "next/link";
-import CarruselItem from "../../components/carruselItem";
+import CarruselItem from "../../../components/carruselItem";
 import { useRouter } from "next/navigation";
 import data from "./data.json"
 
@@ -18,13 +15,13 @@ export default function ItemEspecifico({ params }: { params: { id: string } }) {
   const { id } = params;
   const router = useRouter()
   return (
-    <main className="w-full h-full shadow-lg lg:p-20 p-5">
+    <main className="w-full h-full shadow-lg lg:p-10 p-5">
       {/* Galeria fotos */}
       <div className="w-full h-fit">
         <Breadcrumbs>
           <BreadcrumbItem onClick={()=> router.push("/")}>Home</BreadcrumbItem>
           <BreadcrumbItem onClick={()=> router.push("/catalogo")}>Catalogo</BreadcrumbItem>
-          <BreadcrumbItem>Tractores</BreadcrumbItem>
+          <BreadcrumbItem onClick={()=>{router.push(`/catalogo/tractores`)}}> Tractores</BreadcrumbItem>
           <BreadcrumbItem>{id}</BreadcrumbItem>
         </Breadcrumbs>
       </div>
@@ -42,52 +39,13 @@ export default function ItemEspecifico({ params }: { params: { id: string } }) {
               ></Image>
             </div>
           </div>
-          <div className="w-full h-36 ">
+          <div className="w-full h-full lg:p-10 p-5">
             <CarruselItem
               images={[
                 tractor,
                 tractor2,
-                tractor,
-                tractor,
-                tractor,
-                tractor,
-                tractor,
-                tractor,
               ]}
             ></CarruselItem>
-            {/* <div className="h-36 w-36 shadow-md aspect-square">
-            {" "}
-            <Image
-              src={tractor}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div>
-          <div className="h-36 w-36 shadow-md aspect-square">
-            {" "}
-            <Image
-              src={tractor}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div>
-          <div className="h-36 w-36 shadow-md aspect-square">
-            {" "}
-            <Image
-              src={tractor}
-              layout="responsive"
-              width={1000}
-              height={1000}
-              alt="portada"
-              className="object-cover"
-            ></Image>
-          </div> */}
           </div>
         </section>
         {/* informacion unidad */}

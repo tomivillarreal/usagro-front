@@ -11,6 +11,7 @@ import {motion} from "framer-motion"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import FilterContent from "./filterContent";
+import ItemCatalogo from "./itemCatalogo";
 
 
 
@@ -25,146 +26,13 @@ export default function CatalogoNormal(){
         <FilterContent></FilterContent>
         </aside>
         <div className="w-full lg:w-9/12 h-full flex flex-col lg:flex-row gap-10 flex-wrap justify-center">
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <Card
-              className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col"
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
-                <div className="w-full h-full">
-                  <Image
-                    src={tractor1}
-                    layout="responsive"
-                    width={1000}
-                    height={1000}
-                    alt="portada"
-                    className="object-cover"
-                  ></Image>
-                </div>
-              </div>
-              <div className="w-full h-fit text-xl text-center">Item 1</div>
-            </Card>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <Card
-              className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col"
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
-                <div className="w-full h-full">
-                  <Image
-                    src={tractor1}
-                    layout="responsive"
-                    width={1000}
-                    height={1000}
-                    alt="portada"
-                    className="object-cover"
-                  ></Image>
-                </div>
-              </div>
-              <div className="w-full h-fit text-xl text-center">Item 1</div>
-            </Card>
-          </motion.div>{" "}
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <Card
-              className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col"
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
-                <div className="w-full h-full">
-                  <Image
-                    src={tractor1}
-                    layout="responsive"
-                    width={1000}
-                    height={1000}
-                    alt="portada"
-                    className="object-cover"
-                  ></Image>
-                </div>
-              </div>
-              <div className="w-full h-fit text-xl text-center">Item 1</div>
-            </Card>
-          </motion.div>{" "}
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <Card
-              className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col"
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
-                <div className="w-full h-full">
-                  <Image
-                    src={tractor1}
-                    layout="responsive"
-                    width={1000}
-                    height={1000}
-                    alt="portada"
-                    className="object-cover"
-                  ></Image>
-                </div>
-              </div>
-              <div className="w-full h-fit text-xl text-center">Item 1</div>
-            </Card>
-          </motion.div>{" "}
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <Card
-              className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col"
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
-                <div className="w-full h-full">
-                  <Image
-                    src={tractor1}
-                    layout="responsive"
-                    width={1000}
-                    height={1000}
-                    alt="portada"
-                    className="object-cover"
-                  ></Image>
-                </div>
-              </div>
-              <div className="w-full h-fit text-xl text-center">Item 1</div>
-            </Card>
-          </motion.div>{" "}
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <Card
-              className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col"
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
-                <div className="w-full h-full">
-                  <Image
-                    src={tractor1}
-                    layout="responsive"
-                    width={1000}
-                    height={1000}
-                    alt="portada"
-                    className="object-cover"
-                  ></Image>
-                </div>
-              </div>
-              <div className="w-full h-fit text-xl text-center">Item 1</div>
-            </Card>
-          </motion.div>{" "}
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <Card
-              className="w-full h-44 lg:max-w-96 lg:h-[450px] shadow-md flex flex-row lg:flex-col"
-              onClick={() => router.push("/catalogo/item/1")}
-            >
-              <div className="w-36 h-36 lg:w-full lg:h-96 p-5 aspect-square">
-                <div className="w-full h-full">
-                  <Image
-                    src={tractor1}
-                    layout="responsive"
-                    width={1000}
-                    height={1000}
-                    alt="portada"
-                    className="object-cover"
-                  ></Image>
-                </div>
-              </div>
-              <div className="w-full h-fit text-xl text-center">Item 1</div>
-            </Card>
-          </motion.div>
+          <ItemCatalogo image={tractor1} nombre={"Tractor John Deere"}></ItemCatalogo>
+          <ItemCatalogo image={tractor2} nombre={"Tractor Polemico"}></ItemCatalogo>
+          <ItemCatalogo image={tractor3} nombre={"Tractor no tan polemico"}></ItemCatalogo>
+          <ItemCatalogo image={tractor4} nombre={"Item 1"}></ItemCatalogo>
+          <ItemCatalogo image={tractor5} nombre={"Item 1"}></ItemCatalogo>
+          <ItemCatalogo image={tractor6} nombre={"Item 1"}></ItemCatalogo>
+
         </div>
         </div>
     )

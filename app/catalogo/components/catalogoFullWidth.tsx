@@ -69,7 +69,7 @@ export default function CatalogoFullWidth() {
             <Button
               className="h-max w-max p-4 "
               color="success"
-              onClick={() => router.push("/catalogo/item/1")}
+              onClick={() => router.push("/catalogo/tractores/item/1")}
             >
               Ver mas
             </Button>
@@ -130,7 +130,7 @@ export default function CatalogoFullWidth() {
             <Button
               className="h-max w-max p-4 "
               color="success"
-              onClick={() => router.push("/catalogo/item/1")}
+              onClick={() => router.push("/catalogo/tractores/item/1")}
             >
               Ver mas
             </Button>
@@ -191,7 +191,7 @@ export default function CatalogoFullWidth() {
             <Button
               className="h-max w-max p-4 "
               color="success"
-              onClick={() => router.push("/catalogo/item/1")}
+              onClick={() => router.push("/catalogo/tractores/item/1")}
             >
               Ver mas
             </Button>
@@ -252,7 +252,7 @@ export default function CatalogoFullWidth() {
             <Button
               className="h-max w-max p-4 "
               color="success"
-              onClick={() => router.push("/catalogo/item/1")}
+              onClick={() => router.push("/catalogo/tractores/item/1")}
             >
               Ver mas
             </Button>
